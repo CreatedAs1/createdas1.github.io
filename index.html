@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     <p>Hello.</p>
+    <div id="articleLinks">
+      
+    </div>
+    <script>
+      const containerDiv = document.getElementById("articleLinks");
+      const links = [
+        {name: "test article", link: "test.html"}
+      ];
+      for (let i = 0; i < links.length; i++) {
+        containerDiv.appendChild('<a href="' + links[i].link + '">' + links[i].name + '<a>');
+      };
+    </script>
   </body>
 </html>
